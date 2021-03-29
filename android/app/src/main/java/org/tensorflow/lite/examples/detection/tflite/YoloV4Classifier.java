@@ -173,19 +173,19 @@ public class YoloV4Classifier implements Classifier {
     private static final int NUM_BOXES_PER_BLOCK = 3;
 
     // Number of threads in the java app
-    private static final int NUM_THREADS = 4;
+    private static final int NUM_THREADS = 8;
     private static boolean isNNAPI = false;
     private static boolean isGPU = true;
 
     // tiny or not
-    private static boolean isTiny = false;
+    private static boolean isTiny = true;
 
     // config yolov4 tiny
     private static final int[] OUTPUT_WIDTH_TINY = new int[]{2535, 2535};
     private static final int[] OUTPUT_WIDTH_FULL = new int[]{10647, 10647};
     private static final int[][] MASKS_TINY = new int[][]{{3, 4, 5}, {1, 2, 3}};
     private static final int[] ANCHORS_TINY = new int[]{
-            23, 27, 37, 58, 81, 82, 81, 82, 135, 169, 344, 319};
+            47,111,  94, 77,  83,119, 101,130, 116,159, 415,415};
     private static final float[] XYSCALE_TINY = new float[]{1.05f, 1.05f};
 
     private boolean isModelQuantized;

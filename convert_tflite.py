@@ -58,7 +58,7 @@ def demo():
   print(output_details)
 
   input_shape = input_details[0]['shape']
-
+  print('input shapes is: ', input_shape)
   input_data = np.array(np.random.random_sample(input_shape), dtype=np.float32)
 
   interpreter.set_tensor(input_details[0]['index'], input_data)

@@ -8,6 +8,18 @@
 
 
     <Button
+        android:id="@+id/serverButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="126dp"
+        android:text="Server"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
         android:id="@+id/cameraButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +35,7 @@
         android:id="@+id/detectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="56dp"
         android:layout_marginBottom="126dp"
         android:text="Detect"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,5 +60,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/serverText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="632dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
